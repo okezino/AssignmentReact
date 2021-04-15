@@ -11,15 +11,6 @@ export default function App() {
     setListAnimals([...listAnimals , animal])
     console.log(animal)
   }
-
-  const removeAnimal = ()=>{
-    setListAnimals()
-    console.log(animal)
-  }
-  
-  
-
-
  
   return (
     <SafeAreaView style={styles.container}>
@@ -46,7 +37,7 @@ export default function App() {
             >Add</Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity onPress={removeAnimal}>
+      <TouchableOpacity >
         <View style={styles.addBg}>
             <Text styles ={styles.addText}
             >Del</Text>
