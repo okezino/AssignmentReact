@@ -11,6 +11,12 @@ export default function App() {
     setListAnimals([...listAnimals , animal])
     console.log(animal)
   }
+
+  const removeAnimal = ()=>{
+    let list = [...listAnimals];
+      list.pop
+      setListAnimals(list)
+  }
  
   return (
     <SafeAreaView style={styles.container}>
@@ -38,7 +44,7 @@ export default function App() {
         </View>
       </TouchableOpacity>
       <TouchableOpacity >
-        <View style={styles.addBg}>
+        <View style={styles.addBg} onPress = {removeAnimal}>
             <Text styles ={styles.addText}
             >Del</Text>
         </View>
