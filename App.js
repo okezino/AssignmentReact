@@ -12,10 +12,11 @@ export default function App() {
     console.log(animal)
   }
 
-  const removeAnimal = ()=>{
-    let list = [...listAnimals];
+  const removeAnimal = () =>{
+    let list = [...listAnimals]
       list.pop
       setListAnimals(list)
+
   }
  
   return (
